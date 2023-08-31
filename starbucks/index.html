@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.jpg" class="logo"></a>
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Menu</a></li>
+                <li> <a href="#">New Added</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </header>
+    
+    <div class="content">
+        <div class="textbox">
+            <h2> It's not just Coffee<br>It's <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates non, recusandae ab illum quasi cupiditate 
+                dolorem tempore voluptas, quidem culpa autem officiis labore expedita ad cum aliquam assumenda reiciendis! Corrupti.</p>
+                <a href="#">Learn More</a>
+    </div>
+    <div class="imgbox">
+        <img src="3.png"  class="starbucks" alt="">
+    </div>
+</div>
+<ul class="thumb">
+    <li><img src="3.png" alt="" class="pic" onclick="imgslide('3.png');change('#017143')"></li>
+    <li><img src="vanilla.jpg" onclick="imgslide('vanilla.jpg');change('#eb7495')"></li>
+    <li><img src="choco.jpg" class="pic1" onclick="imgslide('choco.jpg');change('rgb(241, 80, 16)')"></li>
+</ul>
+<ul class="sci">
+    <li><a href="#"></a><img src="facebook.png" alt=""></li>
+    <li><a href="#"></a><img src="twitter.png" alt=""></li>
+    <li><a href="#"></a><img src="insta.jpg" alt="" style="height: 60px; width: 60px;"></li>
+</ul>
+</section>
+<script type="text/javascript">
+ function imgslide(anything){
+    document.querySelector('.starbucks').src = anything;
+ }
+ function change(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background =color;
+ }
+</script>
+</body>
+</html>
